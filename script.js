@@ -17,3 +17,13 @@ let job1 = 'programmer';
 let job2 = 'Teacher';
 // 👆Not like
 
+// assignment
+// 1
+let country = "Japan"
+let continent = "Asia"
+let population = "100 million"
+
+// 2
+console.log(country)
+console.log(continent)
+console.log(population)
