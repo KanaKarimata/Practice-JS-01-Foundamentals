@@ -27,3 +27,13 @@ let population = "100 million"
 console.log(country)
 console.log(continent)
 console.log(population)
+
+true;
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+// check Data type by log
+console.log(typeof true);
+console.log(typeof 23);
+console.log(typeof 'Jonas');
+
+
