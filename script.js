@@ -60,31 +60,47 @@
 // console.log(now - 1991 > now - 2018);
 
 // test data1
-let markWeight = 78
-let markHeight = 1.69
-let johnWeight = 92
-let johnHeight = 1.95
+// let markWeight = 78;
+// let markHeight = 1.69;
+// let johnWeight = 92;
+// let johnHeight = 1.95;
 
-const markBmi = markWeight / (markHeight * markHeight)
-const johnBmi = johnWeight / (johnHeight * johnHeight)
+// const markBmi = markWeight / (markHeight * markHeight);
+// const johnBmi = johnWeight / (johnHeight * johnHeight);
 
-console.log(markBmi)
-console.log(johnBmi)
-let markHigherBMI = markBmi > johnBmi
-console.log(markHigherBMI)
-console.log(typeof markHigherBMI)
+// console.log(markBmi);
+// console.log(johnBmi);
+// let markHigherBMI = markBmi > johnBmi;
+// console.log(markHigherBMI);
+// console.log(typeof markHigherBMI);
 
-// test data2
-let markWeight2 = 95
-let markHeight2 = 1.88
-let johnWeight2 = 85
-let johnHeight2 = 1.76
+// // test data2
+// let markWeight2 = 95;
+// let markHeight2 = 1.88;
+// let johnWeight2 = 85;
+// let johnHeight2 = 1.76;
 
-const markBmi2 = markWeight2 / (markHeight2 * markHeight2)
-const johnBmi2 = johnWeight2 / (johnHeight2 * johnHeight2)
+// const markBmi2 = markWeight2 / (markHeight2 * markHeight2);
+// const johnBmi2 = johnWeight2 / (johnHeight2 * johnHeight2);
 
-console.log(markBmi2)
-console.log(johnBmi2)
-let markHigherBMI2 = markBmi2 > johnBmi2
-console.log(markHigherBMI2)
-console.log(typeof markHigherBMI2)
+// console.log(markBmi2);
+// console.log(johnBmi2);
+// let markHigherBMI2 = markBmi2 > johnBmi2;
+// console.log(markHigherBMI2);
+// console.log(typeof markHigherBMI2);
+const firstName = 'Kana';
+const job = 'programmer';
+const birthYear = '1997';
+const year = 2037;
+
+const kanas = "I'm " + firstName + ', a ' + (year - birthYear) +  'years old ' + job + '!';
+console.log(kanas);
+
+const kanasNew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
+console.log(kanasNew);
+console.log(`Just a regular string...`)
+// many developers start `` for strings
+
+console.log(`String
+multiple
+lines`);
