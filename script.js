@@ -144,22 +144,50 @@
 // ///////////////////////////
 
 // type conversion
-const inputYear = `1991`;
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
-// inputYear is still String
-console.log(Number('Jonas'));
-// NaN = Not a Number
-console.log(typeof NaN);
+// const inputYear = `1991`;
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
+// // inputYear is still String
+// console.log(Number('Jonas'));
+// // NaN = Not a Number
+// console.log(typeof NaN);
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
-// type coercion
-console.log(`I'm ` + 23 + ` years old`);
-console.log(`23` + `10` + 3);
+// // type coercion
+// console.log(`I'm ` + 23 + ` years old`);
+// console.log(`23` + `10` + 3);
 
-let n = `1` + 1;
-n = n-1;
-console.log(n);
-// result is 10
+// let n = `1` + 1;
+// n = n-1;
+// console.log(n);
+// // result is 10
+
+// 5 falsy values: 0, '',undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+// falsy values
+console.log(Boolean(`Jonas`));
+console.log(Boolean({}));
+// truthy values
+
+const money = 100;
+if(money) {
+  console.log(`Don't spend it all :)`);
+}else{
+  console.log(`You should get a job!`);
+}
+// if money is falsy values, result is `You should get a job!` for example money = 0
+
+let height;
+if (height) {
+  console.log(`Yay! Height is defined`);
+}else {
+  console.log(`Height is UNDEFINED`);
+}
+
+
+
+
 
