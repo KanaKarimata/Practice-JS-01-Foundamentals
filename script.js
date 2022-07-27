@@ -164,30 +164,51 @@
 // // result is 10
 
 // 5 falsy values: 0, '',undefined, null, NaN
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(''));
-// falsy values
-console.log(Boolean(`Jonas`));
-console.log(Boolean({}));
-// truthy values
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(''));
+// // falsy values
+// console.log(Boolean(`Jonas`));
+// console.log(Boolean({}));
+// // truthy values
 
-const money = 100;
-if(money) {
-  console.log(`Don't spend it all :)`);
-}else{
-  console.log(`You should get a job!`);
-}
-// if money is falsy values, result is `You should get a job!` for example money = 0
+// const money = 100;
+// if(money) {
+//   console.log(`Don't spend it all :)`);
+// }else{
+//   console.log(`You should get a job!`);
+// }
+// // if money is falsy values, result is `You should get a job!` for example money = 0
 
-let height;
-if (height) {
-  console.log(`Yay! Height is defined`);
+// let height;
+// if (height) {
+//   console.log(`Yay! Height is defined`);
+// }else {
+//   console.log(`Height is UNDEFINED`);
+// }
+
+const age = `18`;
+if(age === 18) console.log(`You just became an adult :D(strict)`);
+// === exactly equal/ strict
+// == loose equal
+
+if(age == 18) console.log(`You just became an adult :D(loose)`);
+// loose equality ignore type of values
+
+const favorite =Number(prompt(`What's your favorite number?`));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { //`23` == 23 => true, `23` === 23 => false
+  console.log(`Cool! 23 is an amazing number!`);
+}else if(favorite === 7) {
+  console.log('7 is also a cool number!');
+}else if(favorite === 9) {
+  console.log('9 is also a cool number!');
 }else {
-  console.log(`Height is UNDEFINED`);
+  console.log(`Number is not 7 or 23 or 9`);
 }
 
-
-
-
-
+// opposite version
+// != is loose not-equal
+// !== is strict not-equal
