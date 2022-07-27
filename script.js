@@ -187,28 +187,35 @@
 //   console.log(`Height is UNDEFINED`);
 // }
 
-const age = `18`;
-if(age === 18) console.log(`You just became an adult :D(strict)`);
-// === exactly equal/ strict
-// == loose equal
+// const age = `18`;
+// if(age === 18) console.log(`You just became an adult :D(strict)`);
+// // === exactly equal/ strict
+// // == loose equal
 
-if(age == 18) console.log(`You just became an adult :D(loose)`);
-// loose equality ignore type of values
+// if(age == 18) console.log(`You just became an adult :D(loose)`);
+// // loose equality ignore type of values
 
-const favorite =Number(prompt(`What's your favorite number?`));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite =Number(prompt(`What's your favorite number?`));
+// console.log(favorite);
+// console.log(typeof favorite);
 
-if (favorite === 23) { //`23` == 23 => true, `23` === 23 => false
-  console.log(`Cool! 23 is an amazing number!`);
-}else if(favorite === 7) {
-  console.log('7 is also a cool number!');
-}else if(favorite === 9) {
-  console.log('9 is also a cool number!');
-}else {
-  console.log(`Number is not 7 or 23 or 9`);
-}
+// if (favorite === 23) { //`23` == 23 => true, `23` === 23 => false
+//   console.log(`Cool! 23 is an amazing number!`);
+// }else if(favorite === 7) {
+//   console.log('7 is also a cool number!');
+// }else if(favorite === 9) {
+//   console.log('9 is also a cool number!');
+// }else {
+//   console.log(`Number is not 7 or 23 or 9`);
+// }
 
 // opposite version
 // != is loose not-equal
 // !== is strict not-equal
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
