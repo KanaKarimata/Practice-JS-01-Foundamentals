@@ -213,9 +213,44 @@
 // != is loose not-equal
 // !== is strict not-equal
 
-const hasDriversLicense = true;
-const hasGoodVision = false;
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// coding challenge #3
+// 1
+// let dolphinsScore = (96 + 108 + 89) / 3;
+// let koalasScore = (88 + 91 + 110) / 3;
+// console.log(dolphinsScore);
+// console.log(koalasScore);
+
+// // 2
+// if(dolphinsScore > koalasScore){
+//   console.log(`Winner is Dolphins Team!`);
+// }else if (koalasScore > dolphinsScore) {
+//   console.log(`Winner is Koalas Team!`);
+// }else if (koalasScore === dolphinsScore) {
+//   console.log('They are DRAW!');
+// }
+
+// Bonus1
+let dolphinsScore = (97 + 112 + 101) / 3;
+let koalasScore = (109+ 95 + 123) / 3;
+console.log(dolphinsScore);
+console.log(koalasScore);
+let compareScores = dolphinsScore > koalasScore
+
+if (compareScores === true && dolphinsScore > 100){
+  console.log(`Winner is Dolphin!`);
+}else if (compareScores !== true && koalasScore > 100) {
+  console.log(`Winner is Koalas!`);
+}else if (compareScores === true && dolphinsScore < 100) {
+  console.log(`Winner is Koalas!`);
+}else if (compareScores === true && koalasScore < 100) {
+  console.log(`Winner is Dolphins!`);
+}else {
+  console.log(`They are Draw!!`);
+}
