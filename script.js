@@ -101,44 +101,65 @@
 
 /////////////Coding Challenge//////////////
 // test data1
-let markWeight = 78;
-let markHeight = 1.69;
-let johnWeight = 92;
-let johnHeight = 1.95;
+// let markWeight = 78;
+// let markHeight = 1.69;
+// let johnWeight = 92;
+// let johnHeight = 1.95;
 
-const markBmi = markWeight / (markHeight * markHeight);
-const johnBmi = johnWeight / (johnHeight * johnHeight);
+// const markBmi = markWeight / (markHeight * markHeight);
+// const johnBmi = johnWeight / (johnHeight * johnHeight);
 
-console.log(markBmi, johnBmi);
-// let markHigherBMI = markBmi > johnBmi;
-// console.log(markHigherBMI);
-// console.log(typeof markHigherBMI);
+// console.log(markBmi, johnBmi);
+// // let markHigherBMI = markBmi > johnBmi;
+// // console.log(markHigherBMI);
+// // console.log(typeof markHigherBMI);
 
-if (markBmi > johnBmi) {
-  console.log(`Mark's BMI ${markBmi} is higher than John's ${johnBmi}`);
-} else {
-  console.log(`John's BMI ${johnBmi} is higher than Mark's ${markBmi}`);
-}
+// if (markBmi > johnBmi) {
+//   console.log(`Mark's BMI ${markBmi} is higher than John's ${johnBmi}`);
+// } else {
+//   console.log(`John's BMI ${johnBmi} is higher than Mark's ${markBmi}`);
+// }
 
-// test data2
-let markWeight2 = 95;
-let markHeight2 = 1.88;
-let johnWeight2 = 85;
-let johnHeight2 = 1.76;
+// // test data2
+// let markWeight2 = 95;
+// let markHeight2 = 1.88;
+// let johnWeight2 = 85;
+// let johnHeight2 = 1.76;
 
-const markBmi2 = markWeight2 / (markHeight2 * markHeight2);
-const johnBmi2 = johnWeight2 / (johnHeight2 * johnHeight2);
+// const markBmi2 = markWeight2 / (markHeight2 * markHeight2);
+// const johnBmi2 = johnWeight2 / (johnHeight2 * johnHeight2);
 
-console.log(markBmi2);
-console.log(johnBmi2);
-// let markHigherBMI2 = markBmi2 > johnBmi2;
-// console.log(markHigherBMI2);
-// console.log(typeof markHigherBMI2);
+// console.log(markBmi2);
+// console.log(johnBmi2);
+// // let markHigherBMI2 = markBmi2 > johnBmi2;
+// // console.log(markHigherBMI2);
+// // console.log(typeof markHigherBMI2);
 
-if (markBmi2 > johnBmi2) {
-  console.log(`Mark's BMI ${markBmi2} is higher than John's ${johnBmi2}`);
-} else {
-  console.log(`John's BMI ${johnBmi2} is higher than Mark's ${markBmi2}`);
-}
+// if (markBmi2 > johnBmi2) {
+//   console.log(`Mark's BMI ${markBmi2} is higher than John's ${johnBmi2}`);
+// } else {
+//   console.log(`John's BMI ${johnBmi2} is higher than Mark's ${markBmi2}`);
+// }
 
-///////////////////////////
+// ///////////////////////////
+
+// type conversion
+const inputYear = `1991`;
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+// inputYear is still String
+console.log(Number('Jonas'));
+// NaN = Not a Number
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log(`I'm ` + 23 + ` years old`);
+console.log(`23` + `10` + 3);
+
+let n = `1` + 1;
+n = n-1;
+console.log(n);
+// result is 10
+
