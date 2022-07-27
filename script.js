@@ -88,19 +88,41 @@
 // let markHigherBMI2 = markBmi2 > johnBmi2;
 // console.log(markHigherBMI2);
 // console.log(typeof markHigherBMI2);
-const firstName = 'Kana';
-const job = 'programmer';
-const birthYear = '1997';
-const year = 2037;
 
-const kanas = "I'm " + firstName + ', a ' + (year - birthYear) +  'years old ' + job + '!';
-console.log(kanas);
+// const firstName = 'Kana';
+// const job = 'programmer';
+// const birthYear = '1997';
+// const year = 2037;
 
-const kanasNew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
-console.log(kanasNew);
-console.log(`Just a regular string...`)
-// many developers start `` for strings
+// const kanas = "I'm " + firstName + ', a ' + (year - birthYear) +  'years old ' + job + '!';
+// console.log(kanas);
 
-console.log(`String
-multiple
-lines`);
+// const kanasNew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
+// console.log(kanasNew);
+// console.log(`Just a regular string...`)
+// // many developers start `` for strings
+
+// console.log(`String
+// multiple
+// lines`);
+
+const age = 15;
+
+if(age >= 18) {
+  console.log(`Sarah can start driving license 😁`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wailt another ${yearsLeft} years :)`);
+}
+// is called Control structure
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+// if you want use Valuables in control structure, you should declare without Values outside the structure.
