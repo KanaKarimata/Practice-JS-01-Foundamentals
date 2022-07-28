@@ -237,20 +237,17 @@
 // }
 
 // Bonus1
-let dolphinsScore = (97 + 112 + 101) / 3;
-let koalasScore = (109+ 95 + 123) / 3;
+let dolphinsScore = (97 + 112 + 81) / 3;
+let koalasScore = (109+ 95 + 86) / 3;
 console.log(dolphinsScore);
 console.log(koalasScore);
-let compareScores = dolphinsScore > koalasScore
 
-if (compareScores === true && dolphinsScore > 100){
+if (dolphinsScore > koalasScore && dolphinsScore >= 100){
   console.log(`Winner is Dolphin!`);
-}else if (compareScores !== true && koalasScore > 100) {
+}else if (koalasScore > dolphinsScore && koalasScore >= 100) {
   console.log(`Winner is Koalas!`);
-}else if (compareScores === true && dolphinsScore < 100) {
-  console.log(`Winner is Koalas!`);
-}else if (compareScores === true && koalasScore < 100) {
-  console.log(`Winner is Dolphins!`);
+}else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >=100) {
+  console.log(`Both min the trophy!`);
 }else {
-  console.log(`They are Draw!!`);
+  console.log(`No one wins the trophy...`)
 }
