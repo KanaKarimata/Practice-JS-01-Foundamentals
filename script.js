@@ -299,9 +299,36 @@
 //true && false && !false is expression
 
 // statement
-if (23 >10) {
-  const str = `23 is bigger`;//`23 is bigger` is Expression
-  //full sentence is Statement
-}
-const me = `Jonas`;
-console.log(`I'm ${2037 - 1997} years old ${me}.`)
+// if (23 >10) {
+//   const str = `23 is bigger`;//`23 is bigger` is Expression
+//   //full sentence is Statement
+// }
+// const me = `Jonas`;
+// console.log(`I'm ${2037 - 1997} years old ${me}.`)
+
+//conditional operator
+
+const age = 15;
+// age >= 18 ? console.log(`I like to drink wine 😍`) : console.log(`I like to drink water 🤭`);
+
+// easy way to write conditional operator
+// const drink = age >= 18 ? `wine🏃` : `water🤳🏾`;
+// console.log(drink);
+
+// let drink2;
+// if (age >= 18) {
+//   drink2 = `wine`;
+// } else {
+//   drink2 = `water`;
+// }
+// console.log(drink2);
+
+// console.log(`I like to drink ${age >= 18 ? `wine🏃` : `water🤳🏾`}`);
+
+const billValue = 275;
+const tip = billValue >= 50 && billValue <= 300 ? `${billValue * 0.15}` : `${billValue * 0.2}`;
+
+const totalValue = billValue + tip;
+const result = `The bill was ${billValue}, the tip was ${tip}, and the total value ${totalValue}`;
+console.log(result);
+
